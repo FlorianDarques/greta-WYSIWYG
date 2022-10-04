@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.w {
+    width: 60%;
+    margin: 0 auto;
+}
+.rchiezbcirem {
+    font-size: 2em;
+    font-family: quantum;
+}
+textarea {
+    width: 100%;
+    border: 1px solid black;
+
+}
+.title {
+    text-align: center;
+    margin: 3em 0;
+}
+.screen {
+    border: 2px solid gray;
+    min-height: 10em;
+    margin: 0 auto;
+    word-wrap: break-word;
+}
+.bg-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    background: gray;
+    margin: 1em 0;
+}
+.bar {
+    width: 0;
+    height: fit-content;
+    background: red;
+}
+.percent {
+    font-family: quantum;
+    
+}
