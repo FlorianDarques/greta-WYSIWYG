@@ -10,22 +10,34 @@
 </head>
 <body>
     <div class="w">
+
     <div class="title">
-        <h1 class="rchiezbcirem">Editeur HTML/CSS </h1>
+        <h1 class="rchiezbcirem">Editeur en JS </h1>
+        <button id="toggle">Toggle</button>
+        <div id="box"></div>
     </div>
+    <div class="flex">
+        <div class="circle">
+
+        </div>
+    </div>
+    
     <div class="wysiwyg">
-        <textarea name="" id="input" cols="30" rows="10" maxlength="200">
-            
-        </textarea>
+        <button onclick="bold()" id="bold">b</button>
+        <button onclick="italic()">i</button>
+        <button onclick="superscript()">sup</button>
+        <button onclick="br()">/br</button>
+        <button onclick='clearall()'>Clear</button>
+        <textarea name="" id="input" cols="30" rows="10" onpaste="return false;"></textarea>
     </div>
     <div class="bg-bar">
-        <p>0%</p>
         <div id="bar" class="bar">
+            0%
         </div>
     </div>
     <div class="screen" id="writer">
 
     </div>
-    </div>
+    </div>  
 </body>
 </html>
