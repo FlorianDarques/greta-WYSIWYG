@@ -18,6 +18,10 @@ body {
     font-size: 2em;
     font-family: quantum;
 }
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
 textarea {
     width: 100%;
     border: 1px solid black;

@@ -1,3 +1,4 @@
+addEventListener('DOMContentLoaded', clearall);
 // write real time
 
 let zonetext = document.querySelector('#input'); 
@@ -37,7 +38,7 @@ zonetext.addEventListener('input', mirror);
 function numberChar () {
     let count = writer.innerText.length;
     console.log(count);
-    if (count === 200) {
+    if (count >= 200) {
         zonetext.maxLength = 0;
         alert("Bravo ! j'applaudis de la main gauche");
     }
@@ -53,6 +54,7 @@ function darkMode() {
     let swap = document.body;
     swap.classList.toggle('darkmode');
     zonetext.classList.toggle('darkmode');
+    barProgress.style.width = '0%';
 };
 btn.addEventListener('click', darkMode);
 
@@ -73,6 +75,7 @@ function mouseOut() {
 function clearall () {
     document.querySelector('#input').value=""; //remplace chaque occurence de la value du textarea par un "" donc un élément vide
     document.querySelector('#writer').innerText=""; //remplace chaque occurence de l'innerText de la div miroir par un "" donc un élément vide
+    zonetext.setAttribute("maxlength","");
 };
 
 // button tag
